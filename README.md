@@ -5,10 +5,10 @@
 
 **Tiimiliikmed**
 
-* Aavik/boss
-* Ketrin/front-end
-* Raielo/Figma
-* Kallas/readme, info otsija
+* Aavik/-/boss
+* Ketrin/-/front-end
+* Raielo/-/Figma
+* Kallas/-/readme, info otsija
 
 [Figma](https://www.figma.com/file/EnOIh9JaGLAvY4gsv6dg7p/shops?node-id=0%3A1&t=kaMFheeh53HUn6Fp-0)
 
