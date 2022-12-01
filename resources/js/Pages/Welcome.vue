@@ -23,7 +23,7 @@ defineProps({
     <title>Homepage</title>
 </head>
 <body>
-    <nav class="flex items-center justify-between flex-wrap bg-yellow-600 p-10">
+    <nav class="flex items-center justify-between flex-wrap bg-gradient-to-r from-yellow-600 via-teal-600 to-cyan-500 p-10">
         <div class="flex items-center flex-shrink-0 text-white mr-7">
             <div id="app" class="h-12 w-12"><img rel="icon" type="icon" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787887896309760/fish_icon.png" alt="logo"></div>
           <span class="font-semibold text-4xl tracking-tight">Fishshop</span>
@@ -35,14 +35,14 @@ defineProps({
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="flex text-xl justify-center lg:flex-grow">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+            <a href="#responsive-header" class="pr-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
               Home
             </a>
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+            <a href="#" class="px-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
               Account 
 
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
+            <a href="#responsive-header" class="pl-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
               Products
             </a>
           </div>
