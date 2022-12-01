@@ -29,6 +29,10 @@ Route::get('/test', function () {
     return Inertia::render('Test');
 });
 
+Route::get('/account', function () {
+    return Inertia::render('account');
+});
+
 Route::get('/dump', function () {
     return Inertia::render('dump');
 });

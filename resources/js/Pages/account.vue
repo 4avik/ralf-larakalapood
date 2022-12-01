@@ -38,9 +38,8 @@ defineProps({
             <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
               Home
             </a>
-            <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
-              Account 
-
+            <a href="resources/js/Pages/account.vue" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+              Account
             </a>
             <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
               Products
@@ -63,7 +62,7 @@ defineProps({
     <div class="relative">
         
         <img class="w-full absolute top-0 left-0" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888470921226/sand.jpg" alt="sand background">
-        <img class="rounded-[50px] absolute flex justify-center top-0 left-0 mt-[3%] ml-[25%] h-[500px] w-[850px]" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888210890753/fishpic.jpg" alt="main img">
+        <img class="absolute flex justify-center top-0 left-0 mt-[3%] ml-[25%] h-[500px] w-[850px]" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888210890753/fishpic.jpg" alt="main img">
         <img class="w-full absolute top-0 left-0 mt-[34%] shadow-md" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787887569162312/water.._00000.png" alt="water wave">
 
         <div class="absolute top-0 left-0 mt-[60%] p-10 m-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
