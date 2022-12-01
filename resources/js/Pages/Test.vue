@@ -1,0 +1,3 @@
+<template>
+    text-s
+</template>
