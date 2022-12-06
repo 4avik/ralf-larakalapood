@@ -23,6 +23,9 @@ defineProps({
     <title>Homepage</title>
 </head>
 <body>
+
+ <!-- <router-link :to="{ path: 'account.vue' }"><button>Login</button></router-link> -->
+
     <nav class="flex items-center justify-between flex-wrap bg-gradient-to-r from-yellow-600 via-teal-600 to-cyan-500 p-10">
         <div class="flex items-center flex-shrink-0 text-white mr-7">
             <div id="app" class="h-12 w-12"><img rel="icon" type="icon" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787887896309760/fish_icon.png" alt="logo"></div>
@@ -38,10 +41,11 @@ defineProps({
             <a href="#responsive-header" class="pr-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
               Home
             </a>
-            <a href="#" class="px-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
-              Account 
 
-            </a>
+            <router-link to="account.vue" class="px-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+              Account 
+            </router-link>
+
             <a href="#responsive-header" class="pl-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
               Products
             </a>
