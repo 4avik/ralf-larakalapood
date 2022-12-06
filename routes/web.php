@@ -7,7 +7,7 @@ use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Web Routes/home/aavik/ralf-larakalapood/images
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -27,6 +27,14 @@ Route::get('/', function () {
 
 Route::get('/test', function () {
     return Inertia::render('Test');
+});
+
+Route::get('/account', function () {
+    return Inertia::render('account');
+});
+
+Route::get('/dump', function () {
+    return Inertia::render('dump');
 });
 
 Route::get('/layout', function () {

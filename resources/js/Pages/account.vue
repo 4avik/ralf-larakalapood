@@ -23,13 +23,10 @@ defineProps({
     <title>Homepage</title>
 </head>
 <body>
-
- <!-- <router-link :to="{ path: 'account.vue' }"><button>Login</button></router-link> -->
-
-    <nav class="flex items-center justify-between flex-wrap bg-gradient-to-r from-yellow-600 via-teal-600 to-cyan-500 p-10">
+    <nav class="flex items-center justify-between flex-wrap bg-yellow-600 p-10">
         <div class="flex items-center flex-shrink-0 text-white mr-7">
             <div id="app" class="h-12 w-12"><img rel="icon" type="icon" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787887896309760/fish_icon.png" alt="logo"></div>
-          <span class="font-semibold text-4xl tracking-tight">Fishshop</span>
+          <span class="font-semibold text-4xl tracking-tight">KALA</span>
         </div>
         <div class="block lg:hidden">
           <button class="flex items-center px-3 py-2 border rounded text-Zinc-900 border-Zinc-900 hover:text-white hover:border-white">
@@ -38,15 +35,13 @@ defineProps({
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="flex text-xl justify-center lg:flex-grow">
-            <a href="#responsive-header" class="pr-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
               Home
             </a>
-
-            <router-link to="account.vue" class="px-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
-              Account 
-            </router-link>
-
-            <a href="#responsive-header" class="pl-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
+            <a href="resources/js/Pages/account.vue" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+              Account
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
               Products
             </a>
           </div>
@@ -67,7 +62,7 @@ defineProps({
     <div class="relative">
         
         <img class="w-full absolute top-0 left-0" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888470921226/sand.jpg" alt="sand background">
-        <img class="rounded-[50px] absolute flex justify-center top-0 left-0 mt-[3%] ml-[25%] h-[500px] w-[850px]" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888210890753/fishpic.jpg" alt="main img">
+        <img class="absolute flex justify-center top-0 left-0 mt-[3%] ml-[25%] h-[500px] w-[850px]" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888210890753/fishpic.jpg" alt="main img">
         <img class="w-full absolute top-0 left-0 mt-[34%] shadow-md" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787887569162312/water.._00000.png" alt="water wave">
 
         <div class="absolute top-0 left-0 mt-[60%] p-10 m-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
