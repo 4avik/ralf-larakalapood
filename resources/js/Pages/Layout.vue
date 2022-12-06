@@ -1,20 +1,31 @@
-<script src="https://cdn.tailwindcss.com"></script>
+<script setup>
+import { Head, Link } from '@inertiajs/inertia-vue3';
+
+defineProps({
+    canLogin: Boolean,
+    canRegister: Boolean,
+    laravelVersion: String,
+    phpVersion: String,
+})
+</script>
 
 <template>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
+      <Head title="Kalapood" />
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-</head>
-<body>
-    <nav class="flex items-center justify-between flex-wrap bg-yellow-600 p-10">
+    <title>Account</title>
+  </head>
+  <body>
+
+    <!-- <router-link :to="{ path: 'account.vue' }"><button>Login</button></router-link> -->
+
+    <nav class="flex items-center justify-between flex-wrap bg-gradient-to-r from-yellow-600 via-teal-600 to-cyan-500 p-10">
         <div class="flex items-center flex-shrink-0 text-white mr-7">
-        <link rel="icon" type="image/x-icon" href="images/fish icon.png">
+            <div id="app" class="h-12 w-12"><img rel="icon" type="icon" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787887896309760/fish_icon.png" alt="logo"></div>
           <span class="font-semibold text-4xl tracking-tight">Fishshop</span>
         </div>
         <div class="block lg:hidden">
@@ -24,14 +35,16 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="flex text-xl justify-center lg:flex-grow">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
-              link1
+            <a href="#responsive-header" class="pr-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+              Home
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
-              link2
-            </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
-              link3
+
+            <router-link to="account.vue" class="px-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white mr-4">
+              Account 
+            </router-link>
+
+            <a href="#responsive-header" class="pl-2.5 block mt-4 lg:inline-block lg:mt-0 text-Zinc-900 hover:text-white">
+              Products
             </a>
           </div>
           <div>
@@ -47,76 +60,12 @@
       <!-- main page -->
       <!-- cards -->
       
-
     <div class="relative">
         
-        <img class="w-full absolute top-0 left-0" src="/images/sand.jpg" alt="sand background">
-        <img class="absolute flex justify-center top-0 left-0 mt-[3%] ml-[25%] h-[500px] w-[850px]" src="/images/fishpic.jpg" alt="main img">
-        <img class="w-full absolute top-0 left-0 mt-[34%] shadow-md" src="/images/water.._00000.png" alt="water wave">
-
-        <div class="absolute top-0 left-0 mt-[60%] p-10 m-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-          <!--Card 1-->
-          <a href="#">
-            <div class="overflow-hidden shadow-lg bg-white transform transition duration-500 hover:scale-105 drop-shadow-2xl">
-              <img class="w-full" src="/images/fishpic.jpg" alt="">
-              <div class="px-6 py-4">
-                <div class="font-bold text-2xl mb-2 hover:underline decoration-sky-500">Kala 1</div>
-                <p class="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                </p>
-                <br>
-                <div class="font-bold text-2xl mb-2">17.50 €</div>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-              </div>
-            </div>
-          </a>
-          <!--Card 2-->
-          <a href="#">
-            <div class="rounded overflow-hidden shadow-lg bg-white transform transition duration-500 hover:scale-105 drop-shadow-2xl">
-              <img class="w-full" src="/images/fishpic.jpg" alt="">
-              <div class="px-6 py-4">
-                <div class="font-bold text-2xl mb-2 hover:underline decoration-sky-500">Kala 2</div>
-                <p class="text-gray-700 text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                </p>
-                <br>
-                <div class="font-bold text-2xl mb-2">3.00 €</div>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-              </div>
-            </div>
-          </a>
-          <!--Card 3-->
-          <a href="#">
-            <div class="rounded overflow-hidden shadow-lg bg-white transform transition duration-500 hover:scale-105 drop-shadow-2xl">
-                <img class="w-full" src="/images/fishpic.jpg" alt="">
-              <div class="px-6 py-4">
-                <div class="font-bold text-2xl mb-2 hover:underline decoration-sky-500">Kala 3</div>
-                  <p class="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                <br>
-                <div class="font-bold text-2xl mb-2">15.00 €</div>
-              </div>
-              <div class="px-6 pt-4 pb-2">
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-                <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#</span>
-              </div>
-            </div>
-          </a>
-        </div>
+        <img class="w-full absolute top-0 left-0" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888470921226/sand.jpg" alt="sand background">
+        <img class="rounded-[50px] absolute flex justify-center top-0 left-0 mt-[3%] ml-[25%] h-[500px] w-[850px]" src="https://cdn.discordapp.com/attachments/1029300025827803156/1047787888210890753/fishpic.jpg" alt="main img">
     </div>
 
-      
-</body>
-</html>
-
+  </body>
+  </html>
 </template>
